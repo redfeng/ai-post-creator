@@ -1,0 +1,15 @@
+# Dependencies
+/Parsedown.php
+
+# WordPress & OS Files
+.DS_Store
+Thumbs.db
+.svn
+.git
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Log and temp files
+*.log
+*.tmp
