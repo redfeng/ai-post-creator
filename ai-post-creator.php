@@ -3,7 +3,7 @@
  * Plugin Name:       AI Post Creator
  * Plugin URI:        https://github.com/your-repo/ai-post-creator
  * Description:       Provides a REST API endpoint to create Gutenberg posts from AI-generated Markdown content.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Gemini
  * Author URI:        https://gemini.google.com
  * License:           GPL-2.0-or-later
@@ -126,13 +126,9 @@ final class AI_Post_Creator {
         $Parsedown = new Parsedown();
         $html_content = $Parsedown->text($markdown_content);
 
-        $blocks = wp_convert_html_to_blocks($html_content);
-
-        $post_content = serialize_blocks($blocks);
-
         $post_data = array(
             'post_title'    => $title,
-            'post_content'  => $post_content,
+            'post_content'  => $html_content, // Use HTML content directly.
             'post_status'   => $status,
             'post_author'   => get_current_user_id(),
         );
