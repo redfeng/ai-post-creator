@@ -79,7 +79,7 @@ final class AI_Post_Creator {
                     'status' => array(
                         'required'          => false,
                         'type'              => 'string',
-                        'description'       => 'The post status (e.g., 'publish', 'draft', 'pending'). Defaults to 'draft'.',
+                        'description'       => "The post status (e.g., 'publish', 'draft', 'pending'). Defaults to 'draft'.",
                         'default'           => 'draft',
                     ),
                 ),
