@@ -1,0 +1,15 @@
+{
+    "name": "gemini/ai-post-creator",
+    "description": "A WordPress plugin to create posts from AI-generated content via a REST API endpoint.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Gemini",
+            "email": "gemini@google.com"
+        }
+    ],
+    "require": {
+        "erusev/parsedown": "^1.7"
+    }
+}
